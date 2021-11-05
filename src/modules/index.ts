@@ -1,12 +1,14 @@
 import { decisionType } from "./decision";
 import { juricaDecisionModule, juricaDecisionType } from "./juricaDecision";
 import { jurinetDecisionModule, jurinetDecisionType } from "./jurinetDecision";
-import { publicityInfoType, publicityInfoModule } from "./publicityInfo";
+import { publicityInfoType } from "./publicityInfo";
+import { idModule, idType } from "./id";
 
-export { publicityInfoModule, juricaDecisionModule, jurinetDecisionModule };
+export { juricaDecisionModule, jurinetDecisionModule, idModule };
 
 export type {
   decisionType,
+  idType,
   publicityInfoType,
   juricaDecisionType,
   jurinetDecisionType,
