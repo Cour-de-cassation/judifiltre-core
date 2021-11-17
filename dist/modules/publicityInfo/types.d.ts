@@ -7,5 +7,4 @@ declare type publicityInfoType = {
     releasabilityStatus: "releasable" | "partiallyReleasable" | "nonReleasable" | "undetermined";
     jurisdiction: "CC" | "CA" | "TJ";
     codeField: string;
-    publicityStatus: "public" | "nonPublic" | "unspecified";
 };

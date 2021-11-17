@@ -13,5 +13,4 @@ type publicityInfoType = {
     | "undetermined";
   jurisdiction: "CC" | "CA" | "TJ";
   codeField: string;
-  publicityStatus: "public" | "nonPublic" | "unspecified";
 };
