@@ -1,18 +1,22 @@
-import { jurinetDecisionType } from '../jurinetDecisionType';
+import { idModule } from "../../id";
+import { jurinetDecisionType } from "../jurinetDecisionType";
 
 export { generateJurinetDecision };
 
 const MAX_RAND_NUMBER = 1000000;
 
-function generateJurinetDecision(decisionFields: Partial<jurinetDecisionType> = {}): jurinetDecisionType {
+function generateJurinetDecision(
+  decisionFields: Partial<jurinetDecisionType> = {}
+): jurinetDecisionType {
   return {
-    _id: Math.floor(Math.random() * MAX_RAND_NUMBER),
-    CAT_PUB: 'W',
-    DOCTRINE: '',
-    ID_CHAMBRE: '',
-    ID_SOLUTION: '',
+    _id: idModule.lib.buildId(),
+    DOCUMENT_ID: Math.floor(Math.random() * MAX_RAND_NUMBER),
+    CAT_PUB: "W",
+    DOCTRINE: "",
+    ID_CHAMBRE: "",
+    ID_SOLUTION: "",
     IND_ADRESSE: 1,
-    IND_ANO: '0',
+    IND_ANO: "0",
     IND_CADASTRE: 1,
     IND_CHAINE: 1,
     IND_COORDONNEE_ELECTRONIQUE: 1,
@@ -23,13 +27,13 @@ function generateJurinetDecision(decisionFields: Partial<jurinetDecisionType> = 
     IND_NOM_PROFESSIONEL: 0,
     IND_PRENOM_PROFESSIONEL: 0,
     JURIDICTION: "Cour d'appel inconnue",
-    NUM_DECISION: '',
-    TEXTE_VISE: '',
-    SOURCE: '',
+    NUM_DECISION: "",
+    TEXTE_VISE: "",
+    SOURCE: "",
     XML: `<?xml version=\"1.0\" ?><DOCUMENT><TEXTE_ARRET>TEXTE DE L'ARRET</TEXTE_ARRET></DOCUMENT>`,
-    TYPE_ARRET: '',
-    RAPROCHEMENT: '',
-    XMLA: '',
+    TYPE_ARRET: "",
+    RAPROCHEMENT: "",
+    XMLA: "",
     _analyse: [],
     _decatt: [],
     _partie: [],

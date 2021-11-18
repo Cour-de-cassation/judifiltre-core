@@ -1,7 +1,10 @@
+import { idType } from "../id";
+
 export type { juricaDecisionType };
 
 type juricaDecisionType = {
-  _id: number;
+  _id: idType;
+  DOCUMENT_ID: number;
   JDEC_JURIDICTION?: string;
   JDEC_NUM_RG?: string;
   JDEC_COMPOSITION?: string;
