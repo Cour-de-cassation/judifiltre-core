@@ -15,6 +15,7 @@ function generatePublicityInfo(
     sourceDb: Math.random() > 0.5 ? "jurinet" : "jurica",
     sourceId: Math.floor(Math.random() * 2300000),
     releasabilityStatus: "undetermined",
+    publicityRequest: undefined,
     ...fields,
   };
 }
