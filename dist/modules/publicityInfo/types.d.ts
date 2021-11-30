@@ -4,8 +4,19 @@ declare type publicityInfoType = {
     _id: idType;
     sourceId: number;
     sourceDb: "jurinet" | "jurica";
-    publicityRequest: "public" | "nonPublic" | undefined;
-    releasabilityStatus: "releasable" | "partiallyReleasable" | "nonReleasable" | "undetermined";
-    jurisdiction: "CC" | "CA" | "TJ";
-    codeField: string;
+    decisionDate?: number;
+    publicity: {
+        clerkRequest: "public" | "notPublic" | "unspecified";
+        assessment: {
+            kind: "public";
+        } | {
+            kind: "notPublic";
+        } | {
+            kind: "partiallyPublic";
+            publicExtract: string;
+        } | undefined;
+        isFrozen: boolean;
+    };
+    jurisdiction: string;
+    fieldCode: string;
 };
