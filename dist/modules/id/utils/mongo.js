@@ -1,9 +1,9 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.areMongoIdEqual = exports.buildMongoId = void 0;
-const mongodb_1 = require("mongodb");
+const bson_1 = require("bson");
 function buildMongoId(id) {
-    return new mongodb_1.ObjectId(id);
+    return new bson_1.ObjectId(id);
 }
 exports.buildMongoId = buildMongoId;
 function areMongoIdEqual(id1, id2) {
