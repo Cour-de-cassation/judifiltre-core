@@ -3,6 +3,7 @@ import { juricaDecisionModule, juricaDecisionType } from "./juricaDecision";
 import { jurinetDecisionModule, jurinetDecisionType } from "./jurinetDecision";
 import { publicityInfoType, publicityInfoModule } from "./publicityInfo";
 import { idModule, idType } from "./id";
+import { userType } from "./user";
 
 export {
   juricaDecisionModule,
@@ -17,4 +18,5 @@ export type {
   publicityInfoType,
   juricaDecisionType,
   jurinetDecisionType,
+  userType,
 };
