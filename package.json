@@ -5,14 +5,14 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "dependencies": {
-    "mongodb": "^4.1.3",
-    "typescript": "^4.4.3",
+    "bson": "^4.6.1",
+    "typescript": "^4.5.4"
     "sder-core": "https://github.com/Cour-de-cassation/sder-core#f19400e5832d88b48d076b99bbea3e4cfd6803f4"
   },
   "devDependencies": {
-    "@types/mongodb": "^4.0.7",
-    "@typescript-eslint/eslint-plugin": "^4.31.1",
-    "@typescript-eslint/parser": "^4.31.1",
+    "@typescript-eslint/eslint-plugin": "^5.8.0",
+    "@typescript-eslint/parser": "^5.8.0",
+    "@types/node": "=16.11.19",
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.3.0"
   },
