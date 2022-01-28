@@ -3,7 +3,6 @@ import { OCCULTATION_CATEGORIES_FIELDS } from "./constants";
 export type { jurinetDecisionType };
 declare type jurinetDecisionType = {
     _id: idType;
-    DOCUMENT_ID: number;
     _titrage: Array<referenceType>;
     _analyse: Array<referenceType>;
     _partie: Array<referenceType>;
