@@ -4,7 +4,6 @@ export type { juricaDecisionType };
 
 type juricaDecisionType = {
   _id: idType;
-  DOCUMENT_ID: number;
   JDEC_JURIDICTION?: string;
   JDEC_NUM_RG?: string;
   JDEC_COMPOSITION?: string;

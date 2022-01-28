@@ -10,7 +10,6 @@ function generateJurinetDecision(
 ): jurinetDecisionType {
   return {
     _id: idModule.lib.buildId(),
-    DOCUMENT_ID: Math.floor(Math.random() * MAX_RAND_NUMBER),
     CAT_PUB: "W",
     DOCTRINE: "",
     ID_CHAMBRE: "",

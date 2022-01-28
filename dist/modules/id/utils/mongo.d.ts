@@ -1,4 +1,4 @@
-import { ObjectId } from 'mongodb';
+import { ObjectId } from 'bson';
 export { buildMongoId, areMongoIdEqual };
 export type { mongoIdType };
 declare type mongoIdType = ObjectId;
