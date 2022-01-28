@@ -6,7 +6,8 @@
   "types": "dist/index.d.ts",
   "dependencies": {
     "bson": "^4.6.1",
-    "typescript": "^4.5.4"
+    "typescript": "^4.5.4",
+    "sder-core": "https://github.com/Cour-de-cassation/sder-core#f19400e5832d88b48d076b99bbea3e4cfd6803f4"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.8.0",
