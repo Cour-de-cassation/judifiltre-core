@@ -29,7 +29,7 @@ function generateJurinetDecision(
     NUM_DECISION: "",
     TEXTE_VISE: "",
     SOURCE: "",
-    XML: `<?xml version=\"1.0\" ?><DOCUMENT><TEXTE_ARRET>TEXTE DE L'ARRET</TEXTE_ARRET></DOCUMENT>`,
+    XML: `<?xml version=\"1.0\" ?><DOCUMENT><TEXTE_ARRET>TEXTE DE L'ARRET</TEXTE_ARRET><CAT_PUB>Test</CAT_PUB><LIEN_WWW>https://example.org</LIEN_WWW></DOCUMENT>`,
     TYPE_ARRET: "",
     RAPROCHEMENT: "",
     XMLA: "",
