@@ -7,14 +7,7 @@ declare type publicityInfoType = {
     decisionDate?: number;
     publicity: {
         clerkRequest: "public" | "notPublic" | "unspecified";
-        assessment: {
-            kind: "public";
-        } | {
-            kind: "notPublic";
-        } | {
-            kind: "partiallyPublic";
-            publicExtract: string;
-        } | undefined;
+        assessment: "public" | "notPublic" | "partiallyPublic" | undefined;
         isFrozen: boolean;
     };
     jurisdiction: string;
