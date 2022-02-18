@@ -1,4 +1,4 @@
-import { idModule } from "../../id";
+import { randomInt } from "crypto";
 import { jurinetDecisionType } from "../jurinetDecisionType";
 
 export { generateJurinetDecision };
@@ -9,7 +9,7 @@ function generateJurinetDecision(
   decisionFields: Partial<jurinetDecisionType> = {}
 ): jurinetDecisionType {
   return {
-    _id: idModule.lib.buildId(),
+    _id: randomInt(1000),
     CAT_PUB: "W",
     DOCTRINE: "",
     ID_CHAMBRE: "",
