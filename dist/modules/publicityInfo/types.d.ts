@@ -5,6 +5,7 @@ declare type publicityInfoType = {
     sourceId: number;
     sourceDb: "jurinet" | "jurica";
     decisionDate?: number;
+    creationDate?: number;
     publicity: {
         clerkRequest: "public" | "notPublic" | "unspecified";
         assessment: "public" | "notPublic" | "partiallyPublic" | undefined;
